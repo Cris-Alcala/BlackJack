@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>BlackJack</title>
+</head>
+<body>
+    <div class="buttons">
+        <button id="newGame">New Game</button>
+        <button id="getCard">Get Card</button>
+        <button id="passTurn">Pass Turn</button>
+    </div>
+    <div class="game">
+        <div class="players">
+            <div class="localSpace">
+                <table>
+                    <tr>
+                        <td>Local Player</td>
+                        <td class="localPoints"></td>
+                    </tr>
+                </table>
+                <div class="localCards"></div>
+            </div>
+            <div class="iaSpace">
+                <table>
+                    <tr>
+                        <td>Crupier</td>
+                        <td class="iaPoints"></td>
+                    </tr>
+                </table>
+                <div class="iaCards"></div>
+            </div>
+        </div>
+        <div class="conteo" style="color: white;">Conteo 0</div>
+        <div class="crupierSpace">
+            <img src="img/cartas/grey_back.png" alt="" id="grey_back" class="hide">
+            <img src="img/cartas/red_back.png" alt="" id="red_back" class="hide">
+            <img src="img/cartas/red_back.png" alt="" class="shadow">
+        </div>
+    </div>
+    <div class="message"><h2></h2></div>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
